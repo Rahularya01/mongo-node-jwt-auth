@@ -5,6 +5,8 @@ require("dotenv").config();
 
 connectDB();
 
+app.use(express.json());
+
 // Import Routes
 const authRoutes = require("./routes/auth");
 
